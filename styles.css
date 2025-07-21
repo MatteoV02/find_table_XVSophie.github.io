@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f1e9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+  
+  .container {
+    background: #fffaf0;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  h1 {
+    color: #4a3f35;
+    margin-bottom: 1rem;
+  }
+  
+  input[type=\"file\"], #search {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  #results {
+    font-size: 1rem;
+    color: #3e332b;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .result-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .result-item:hover {
+    background-color: #f0e6d2;
+  }
+  
+  #select-button {
+    padding: 0.8rem 1.2rem;
+    background-color: #d4b08a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #select-button:hover {
+    background-color: #b9936c;
+  }
+  
+  #info-label {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #5a4332;
+    padding: 1rem;
+    background-color: #fef6e4;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+  }
+  
+  #info-label.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
