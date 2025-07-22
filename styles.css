@@ -1,10 +1,10 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f5f1e9;
+    background: #fffaf0;
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center; /* Change from flex-start to center */
     padding: 2rem;
   }
   
@@ -12,13 +12,22 @@ body {
     background: #fffaf0;
     border-radius: 16px;
     padding: 2rem;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    justify-content: center;
+   
     max-width: 600px;
     width: 100%;
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Ensure vertical alignment */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside the container */
   }
   
   h1 {
     color: #4a3f35;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    color: #635243;
     margin-bottom: 1rem;
   }
   
@@ -27,7 +36,8 @@ body {
     padding: 0.8rem;
     font-size: 1rem;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    
+    border: 1px solid #f0e6d2;
     margin-bottom: 1rem;
   }
   
@@ -40,7 +50,7 @@ body {
   
   .result-item {
     padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f0e6d2;
     cursor: pointer;
   }
   
@@ -49,7 +59,7 @@ body {
   }
   
   #select-button {
-    padding: 0.8rem 1.2rem;
+    padding: 1rem 1.5rem;
     background-color: #d4b08a;
     color: #fff;
     border: none;
@@ -62,7 +72,7 @@ body {
   #select-button:hover {
     background-color: #b9936c;
   }
-  
+
   #info-label {
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -71,16 +81,15 @@ body {
     background-color: #fef6e4;
     border-radius: 12px;
     opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
+    transform: translateY(50%);
+    transition: all 1s ease;
   }
   
   #info-label.visible {
     opacity: 1;
     transform: translateY(0);
   }
-  
+
   .hidden {
     display: none;
   }
-  

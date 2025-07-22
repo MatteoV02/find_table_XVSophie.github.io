@@ -42,6 +42,8 @@ searchInput.addEventListener("input", () => {
       document.querySelectorAll(".result-item").forEach(el => el.style.background = "");
       div.style.background = "#eadcc3";
       selectedItem = item;
+      searchInput.value = item.nombre; // Update search input with selected item
+
     };
     resultsDiv.appendChild(div);
   });
