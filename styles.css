@@ -1,15 +1,23 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #fffaf0;
+    background: #fffaf0 url('fondo.png') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center; /* Change from flex-start to center */
     padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: auto;
   }
   
   .container {
-    background: #fffaf0;
+    background: #fffaf000;
     border-radius: 16px;
     padding: 2rem;
     justify-content: center;
@@ -20,6 +28,7 @@ body {
     flex-direction: column; /* Ensure vertical alignment */
     align-items: center; /* Center content horizontally */
     text-align: center; /* Center text inside the container */
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
   }
   
   h1 {
@@ -59,13 +68,14 @@ body {
   }
   
   #select-button {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2.5rem; /* Más grande */
     background-color: #d4b08a;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 2rem; /* Letra más grande */
+    font-weight: bold; /* Opcional: más gruesa */
     transition: background-color 0.3s ease;
   }
   
@@ -92,4 +102,54 @@ body {
 
   .hidden {
     display: none;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding: 0.5rem;
+    }
+    .container {
+      padding: 1rem;
+      max-width: 100vw;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    input[type="file"], #search {
+      font-size: 0.95rem;
+      padding: 0.6rem;
+    }
+    #select-button {
+      font-size: 1.5rem; /* Más grande en móvil también */
+      padding: 1.2rem 1.7rem;
+    }
+    #info-label {
+      font-size: 1rem;
+      padding: 0.7rem;
+    }
+    #results {
+      max-height: 120px;
+      font-size: 0.95rem;
+    }
+  }
+  @media (max-width: 1080px), (max-height: 1920px) {
+    body {
+      width: 100vw;
+      height: 100vh;
+      min-width: unset;
+      min-height: unset;
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 1rem; /* o 16px */
+      box-sizing: border-box;
+    }
   }
