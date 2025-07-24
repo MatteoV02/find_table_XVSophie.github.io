@@ -7,7 +7,7 @@ const selectButton = document.getElementById("select-button");
 const infoLabel = document.getElementById("info-label");
 
 // Cargar el archivo CSV que ya está en el proyecto
-fetch('data.csv')
+fetch('data_C&W.csv')
   .then(response => response.text())
   .then(text => {
     const lines = text.split(/\r?\n/).filter(Boolean);
