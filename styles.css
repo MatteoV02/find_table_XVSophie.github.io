@@ -28,7 +28,7 @@ body {
     flex-direction: column; /* Ensure vertical alignment */
     align-items: center; /* Center content horizontally */
     text-align: center; /* Center text inside the container */
-    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    
   }
   
   h1 {
@@ -69,7 +69,7 @@ body {
   
   #select-button {
     padding: 1.5rem 2.5rem; /* Más grande */
-    background-color: #d4b08a;
+    background-color: #20295a;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -80,7 +80,7 @@ body {
   }
   
   #select-button:hover {
-    background-color: #b9936c;
+    background-color: #181f44;
   }
 
   #info-label {
