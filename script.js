@@ -40,7 +40,8 @@ searchInput.addEventListener("input", () => {
     div.textContent = item.nombre;
     div.onclick = () => {
       document.querySelectorAll(".result-item").forEach(el => el.style.background = "");
-      div.style.background = "#eadcc3";
+      div.style.background = "#b9c0e5";
+      div.style.color = "#ffffffff";
       selectedItem = item;
       searchInput.value = item.nombre; // Update search input with selected item
 
